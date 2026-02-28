@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+}
+
+#first-div {
+    background: pink;
+}
+
+.paragraph {
+    color: black;
+    font-size: larger;
+}

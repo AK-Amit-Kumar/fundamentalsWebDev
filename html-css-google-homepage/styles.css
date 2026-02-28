@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter',sans-serif;
+}
+/* tag selector  */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* class selector  */
+.img-button {
+    border: none;
+    background: transparent;
+
+}
+/* combination selector  */
+.img-button img {
+    width: 30px;
+    aspect-ratio: 1/1; /* giving an proper ratio - if width is 10, heigt is also 10*/
+    overflow: hidden;
+    border-radius: 100%;
+
+}
