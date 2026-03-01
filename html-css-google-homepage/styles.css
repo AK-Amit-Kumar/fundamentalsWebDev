@@ -140,3 +140,43 @@ main {
 .button-grid button:hover {
     border: 1px solid slategray;
 }
+
+.language-link-ele {
+    font-size: 0.7rem;
+}
+.language-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.language-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: rgb(244, 244, 244);
+}
+
+/* in this padding is applied to all the div under footer, not only direct div */
+/* footer div {  
+    padding: 1rem;
+} */
+
+/* in this css will be applied only to direct divs */
+footer > div {  
+    padding: 1rem;
+}
+
+.footer-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
