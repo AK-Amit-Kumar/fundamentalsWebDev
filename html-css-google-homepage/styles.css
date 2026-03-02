@@ -82,7 +82,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 1rem;
+    padding: 4rem 1rem;
 }
 
 .title-text {
@@ -159,6 +159,7 @@ main {
 
 footer {
     background: rgb(244, 244, 244);
+    font-size: 0.7rem;
 }
 
 footer a {
@@ -183,9 +184,10 @@ footer > div {
 
 .footer-grid {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .footer-links {
@@ -196,6 +198,19 @@ footer > div {
 }
 
 @media ( min-width: 640px) {
+    .footer-grid {
+    display: flex;
     
-    
+    flex-direction: row;
+    gap: 1rem;
+}
+
+footer {
+    font-size: 0.8rem;
+}
+
+.nav-container-second .text-link {
+    display: block;
+}
+   
 }
