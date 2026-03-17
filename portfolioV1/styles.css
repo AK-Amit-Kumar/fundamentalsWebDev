@@ -9,7 +9,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -21,14 +21,21 @@ body {
     gap: 8rem;
 }
 
-p, h2 {
+p,
+h2 {
     line-height: 1.5rem;
 }
 
 /* The CSS code `p::selection, h1::selection, h2::selection, h3::selection, h4::selection,
 h5::selection, h6::selection` is targeting the selection (highlighted) text within different HTML
 elements such as paragraphs (`<p>`), headings (`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`). */
-p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
     background: var(--color-accent);
     color: #0f172a;
 }
@@ -40,7 +47,9 @@ p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::se
     opacity: 0.15;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     position: relative;
     z-index: 10;
 }
@@ -60,7 +69,7 @@ header h4,
 
 header a {
     text-decoration: none;
-    
+
 }
 
 header h1 {
@@ -75,7 +84,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    
+
 }
 
 section {
@@ -84,17 +93,22 @@ section {
     gap: 2rem;
 }
 
-section h2 {
+section h2,
+.experience-card h3 {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 500;
-    
+
 }
 
 .about-content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
 }
 
 .anchor-text {
@@ -105,4 +119,55 @@ section h2 {
 
 .anchor-text:hover {
     color: var(--color-accent);
+}
+
+/* expirience content is itself a colunm display */
+.expirience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* each card in the expirience content are in grid format */
+.experience-card {
+    display: grid;
+    /* The CSS property `grid-template-columns` with the value `repeat(1, minmax(0, 1fr))` is defining
+    the columns for a grid container. */
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tenure {
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.experience-card p,
+.tag p {
+    font-size: 0.9rem;
+}
+
+.experience-card a {
+    text-decoration: none;
+}
+
+.card-header {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.tag-container {
+    display: flex;
+    /* Ensures that if the row is too big , all the contents is wrapped to the next row  */
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
 }
